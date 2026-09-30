@@ -1,0 +1,39 @@
+{
+  "Name": "Motor execution dataset from Wairagkar et al 2018",
+  "BIDSVersion": "1.9.0",
+  "HEDVersion": "8.4.0",
+  "DatasetType": "derivative",
+  "License": "CC-BY-4.0",
+  "Authors": [
+    "Maitreyee Wairagkar",
+    "Yoshikatsu Hayashi",
+    "Slawomir J. Nasuto"
+  ],
+  "ReferencesAndLinks": [
+    "https://researchdata.reading.ac.uk/117/"
+  ],
+  "GeneratedBy": [
+    {
+      "CodeURL": "https://github.com/NeuroTechX/moabb",
+      "Name": "moabb",
+      "Description": "Mother of All BCI Benchmarks",
+      "Version": "1.4.3"
+    }
+  ],
+  "SourceDatasets": [
+    {
+      "DOI": "10.1371/journal.pone.0193722",
+      "URL": "https://researchdata.reading.ac.uk/117/"
+    }
+  ],
+  "Keywords": [
+    "Healthy",
+    "Motor",
+    "Research",
+    "imagery",
+    "motor_control"
+  ],
+  "PublicationYear": 2018,
+  "DatasetDOI": "10.82901/nemar.nm000141",
+  "Version": "1.0.2"
+}

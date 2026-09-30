@@ -1,0 +1,157 @@
+{
+  "best_model": "SVM_RBF",
+  "all_models": {
+    "SVM_RBF": {
+      "accuracy": 0.3833,
+      "precision": 0.3853,
+      "recall": 0.3833,
+      "f1_score": 0.3839,
+      "confusion_matrix": [
+        [
+          49,
+          39,
+          32
+        ],
+        [
+          43,
+          44,
+          33
+        ],
+        [
+          28,
+          47,
+          45
+        ]
+      ]
+    },
+    "SVM_Linear": {
+      "accuracy": 0.3639,
+      "precision": 0.3645,
+      "recall": 0.3639,
+      "f1_score": 0.363,
+      "confusion_matrix": [
+        [
+          46,
+          39,
+          35
+        ],
+        [
+          43,
+          48,
+          29
+        ],
+        [
+          45,
+          38,
+          37
+        ]
+      ]
+    },
+    "Logistic_Regression": {
+      "accuracy": 0.3361,
+      "precision": 0.3355,
+      "recall": 0.3361,
+      "f1_score": 0.3347,
+      "confusion_matrix": [
+        [
+          42,
+          41,
+          37
+        ],
+        [
+          43,
+          46,
+          31
+        ],
+        [
+          45,
+          42,
+          33
+        ]
+      ]
+    },
+    "Random_Forest": {
+      "accuracy": 0.3306,
+      "precision": 0.3298,
+      "recall": 0.3306,
+      "f1_score": 0.3293,
+      "confusion_matrix": [
+        [
+          37,
+          40,
+          43
+        ],
+        [
+          37,
+          47,
+          36
+        ],
+        [
+          35,
+          50,
+          35
+        ]
+      ]
+    }
+  },
+  "detailed_test_report": {
+    "right_hand": {
+      "precision": 0.4083333333333333,
+      "recall": 0.4083333333333333,
+      "f1-score": 0.4083333333333333,
+      "support": 120.0
+    },
+    "rest": {
+      "precision": 0.3384615384615385,
+      "recall": 0.36666666666666664,
+      "f1-score": 0.352,
+      "support": 120.0
+    },
+    "left_hand": {
+      "precision": 0.4090909090909091,
+      "recall": 0.375,
+      "f1-score": 0.391304347826087,
+      "support": 120.0
+    },
+    "accuracy": 0.38333333333333336,
+    "macro avg": {
+      "precision": 0.38529526029526034,
+      "recall": 0.3833333333333333,
+      "f1-score": 0.3838792270531401,
+      "support": 360.0
+    },
+    "weighted avg": {
+      "precision": 0.3852952602952603,
+      "recall": 0.38333333333333336,
+      "f1-score": 0.38387922705314015,
+      "support": 360.0
+    }
+  },
+  "train_subjects": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "test_subjects": [
+    12,
+    13,
+    14
+  ],
+  "dataset_summary": {
+    "total_participants": 14,
+    "total_trials": 1656,
+    "class_distribution": {
+      "right_hand": 552,
+      "rest": 552,
+      "left_hand": 552
+    }
+  }
+}

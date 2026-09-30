@@ -1,0 +1,150 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.nm000141-blue)](https://doi.org/10.82901/nemar.nm000141)
+
+# Motor execution dataset from Wairagkar et al 2018
+
+Motor execution dataset from Wairagkar et al 2018.
+
+## Dataset Overview
+
+- **Code**: Wairagkar2018
+- **Paradigm**: imagery
+- **DOI**: 10.1371/journal.pone.0193722
+- **Subjects**: 14
+- **Sessions per subject**: 1
+- **Events**: right_hand=1, rest=2, left_hand=3
+- **Trial interval**: [0, 3] s
+- **File format**: MAT
+- **Data preprocessed**: True
+
+## Acquisition
+
+- **Sampling rate**: 1024.0 Hz
+- **Number of channels**: 19
+- **Channel types**: eeg=19
+- **Channel names**: Fp1, Fp2, F7, F3, Fz, F4, F8, T7, C3, Cz, C4, T8, P7, P3, Pz, P4, P8, O1, O2
+- **Montage**: standard_1020
+- **Hardware**: Deymed TruScan 32
+- **Reference**: FCz
+- **Ground**: AFz
+- **Sensor type**: Ag/AgCl ring
+- **Line frequency**: 50.0 Hz
+- **Online filters**: {'highpass': 0.5, 'lowpass': 60, 'notch_hz': 50}
+
+## Participants
+
+- **Number of subjects**: 14
+- **Health status**: healthy
+- **Age**: mean=26.0, std=4.0
+- **Gender distribution**: female=8, male=6
+- **Handedness**: mixed (12 right, 2 left)
+- **BCI experience**: naive
+- **Species**: human
+
+## Experimental Protocol
+
+- **Paradigm**: imagery
+- **Number of classes**: 3
+- **Class labels**: right_hand, rest, left_hand
+- **Trial duration**: 6.0 s
+- **Study design**: Asynchronous voluntary finger tapping: right tap, left tap, and resting state
+- **Feedback type**: none
+- **Stimulus type**: text cues
+- **Stimulus modalities**: visual
+- **Primary modality**: visual
+- **Synchronicity**: asynchronous
+- **Mode**: offline
+- **Instructions**: Participants were asked to tap their index finger at a self-chosen time within a 10-second window after the cue
+
+## HED Event Annotations
+
+Schema: HED 8.4.0 | Browse: https://www.hedtags.org/hed-schema-browser
+
+```
+  right_hand
+    ├─ Sensory-event, Experimental-stimulus, Visual-presentation
+    └─ Agent-action
+       └─ Imagine
+          ├─ Move
+          └─ Right, Hand
+
+  rest
+    ├─ Sensory-event
+    ├─ Experimental-stimulus
+    ├─ Visual-presentation
+    └─ Rest
+
+  left_hand
+    ├─ Sensory-event, Experimental-stimulus, Visual-presentation
+    └─ Agent-action
+       └─ Imagine
+          ├─ Move
+          └─ Left, Hand
+
+```
+## Paradigm-Specific Parameters
+
+- **Detected paradigm**: motor_imagery
+- **Imagery tasks**: right_hand, left_hand, rest
+
+## Data Structure
+
+- **Trials**: 1665
+- **Trials context**: 14 subjects x 120 trials (40 per condition), except subject 2 with 105 trials (35 per condition)
+
+## Preprocessing
+
+- **Data state**: preprocessed
+- **Preprocessing applied**: True
+- **Steps**: DC offset removal, 0.5 Hz high-pass filter, 50 Hz notch filter, 60 Hz low-pass filter, ICA artifact removal (EEGLAB infomax), trial segmentation (-3 to +3 s around movement onset)
+- **Highpass filter**: 0.5 Hz
+- **Lowpass filter**: 60.0 Hz
+- **Notch filter**: 50.0 Hz
+
+## Signal Processing
+
+- **Classifiers**: LDA
+- **Feature extraction**: autocorrelation_relaxation_time, ERD
+- **Frequency bands**: broadband=[0.5, 30.0] Hz; mu=[8.0, 13.0] Hz; beta=[13.0, 30.0] Hz; low=[0.5, 8.0] Hz
+- **Spatial filters**: bipolar_montage
+
+## Cross-Validation
+
+- **Method**: 10x10-fold
+- **Folds**: 10
+- **Evaluation type**: within_subject
+
+## BCI Application
+
+- **Applications**: motor_control
+- **Environment**: laboratory
+- **Online feedback**: False
+
+## Tags
+
+- **Pathology**: Healthy
+- **Modality**: Motor
+- **Type**: Research
+
+## Documentation
+
+- **DOI**: 10.1371/journal.pone.0193722
+- **License**: CC-BY-4.0
+- **Investigators**: Maitreyee Wairagkar, Yoshikatsu Hayashi, Slawomir J. Nasuto
+- **Senior author**: Slawomir J. Nasuto
+- **Institution**: University of Reading
+- **Department**: Brain Embodiment Lab, Biomedical Engineering
+- **Country**: GB
+- **Repository**: University of Reading Research Data Archive
+- **Data URL**: https://researchdata.reading.ac.uk/117/
+- **Publication year**: 2018
+
+## References
+
+Wairagkar, M., Hayashi, Y., & Nasuto, S. J. (2018). Exploration of neural correlates of movement intention based on characterisation of temporal dependencies in electroencephalography. PLOS ONE, 13(3), e0193722. https://doi.org/10.1371/journal.pone.0193722
+Appelhoff, S., Sanderson, M., Brooks, T., Vliet, M., Quentin, R., Holdgraf, C., Chaumon, M., Mikulan, E., Tavabi, K., Hochenberger, R., Welke, D., Brunner, C., Rockhill, A., Larson, E., Gramfort, A. and Jas, M. (2019). MNE-BIDS: Organizing electrophysiological data into the BIDS format and facilitating their analysis. Journal of Open Source Software 4: (1896). https://doi.org/10.21105/joss.01896
+
+Pernet, C. R., Appelhoff, S., Gorgolewski, K. J., Flandin, G., Phillips, C., Delorme, A., Oostenveld, R. (2019). EEG-BIDS, an extension to the brain imaging data structure for electroencephalography. Scientific Data, 6, 103. https://doi.org/10.1038/s41597-019-0104-8
+
+---
+Generated by MOABB 1.4.3 (Mother of All BCI Benchmarks)
+https://github.com/NeuroTechX/moabb

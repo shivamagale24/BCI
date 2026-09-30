@@ -1,0 +1,154 @@
+_dataset:
+  class: Wairagkar2018
+  code: Wairagkar2018
+  doi: 10.1371/journal.pone.0193722
+  interval:
+  - 0
+  - 3
+  n_subjects: 14
+  paradigm: imagery
+acquisition:
+  channel_types:
+    eeg: 19
+  filters:
+    highpass: 0.5
+    lowpass: 60
+    notch_hz: 50
+  ground: AFz
+  hardware: Deymed TruScan 32
+  line_freq: 50.0
+  montage: standard_1020
+  n_channels: 19
+  reference: FCz
+  sampling_rate: 1024.0
+  sensor_type: Ag/AgCl ring
+  sensors:
+  - Fp1
+  - Fp2
+  - F7
+  - F3
+  - Fz
+  - F4
+  - F8
+  - T7
+  - C3
+  - Cz
+  - C4
+  - T8
+  - P7
+  - P3
+  - Pz
+  - P4
+  - P8
+  - O1
+  - O2
+bci_application:
+  applications:
+  - motor_control
+  environment: laboratory
+cross_validation:
+  cv_folds: 10
+  cv_method: 10x10-fold
+  evaluation_type:
+  - within_subject
+data_processed: true
+data_structure:
+  n_trials: 1665
+  trials_context: 14 subjects x 120 trials (40 per condition), except subject 2 with 105 trials (35 per condition)
+documentation:
+  country: GB
+  data_url: https://researchdata.reading.ac.uk/117/
+  doi: 10.1371/journal.pone.0193722
+  institution: University of Reading
+  institution_department: Brain Embodiment Lab, Biomedical Engineering
+  investigators:
+  - Maitreyee Wairagkar
+  - Yoshikatsu Hayashi
+  - Slawomir J. Nasuto
+  license: CC-BY-4.0
+  publication_year: 2018
+  repository: University of Reading Research Data Archive
+  senior_author: Slawomir J. Nasuto
+experiment:
+  class_labels:
+  - right_hand
+  - rest
+  - left_hand
+  events:
+    left_hand: 3
+    rest: 2
+    right_hand: 1
+  feedback_type: none
+  instructions: Participants were asked to tap their index finger at a self-chosen time within a 10-second window after the
+    cue
+  mode: offline
+  n_classes: 3
+  paradigm: imagery
+  primary_modality: visual
+  stimulus_modalities:
+  - visual
+  stimulus_type: text cues
+  study_design: 'Asynchronous voluntary finger tapping: right tap, left tap, and resting state'
+  synchronicity: asynchronous
+  trial_duration: 6.0
+file_format: MAT
+paradigm_specific:
+  detected_paradigm: motor_imagery
+  imagery_tasks:
+  - right_hand
+  - left_hand
+  - rest
+participants:
+  age_mean: 26.0
+  age_std: 4.0
+  bci_experience: naive
+  gender:
+    female: 8
+    male: 6
+  handedness: mixed (12 right, 2 left)
+  health_status: healthy
+  n_subjects: 14
+  species: human
+preprocessing:
+  data_state: preprocessed
+  highpass_hz: 0.5
+  lowpass_hz: 60.0
+  notch_hz: 50.0
+  preprocessing_applied: true
+  preprocessing_steps:
+  - DC offset removal
+  - 0.5 Hz high-pass filter
+  - 50 Hz notch filter
+  - 60 Hz low-pass filter
+  - ICA artifact removal (EEGLAB infomax)
+  - trial segmentation (-3 to +3 s around movement onset)
+runs_per_session: 1
+sessions_per_subject: 1
+signal_processing:
+  classifiers:
+  - LDA
+  feature_extraction:
+  - autocorrelation_relaxation_time
+  - ERD
+  frequency_bands:
+    beta:
+    - 13.0
+    - 30.0
+    broadband:
+    - 0.5
+    - 30.0
+    low:
+    - 0.5
+    - 8.0
+    mu:
+    - 8.0
+    - 13.0
+  spatial_filters:
+  - bipolar_montage
+tags:
+  modality:
+  - Motor
+  pathology:
+  - Healthy
+  type:
+  - Research

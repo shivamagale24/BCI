@@ -1,0 +1,100 @@
+{
+ "dataset": "nm000141",
+ "moabb_class": "Wairagkar2018",
+ "moabb_version_used": "1.5.0dev0",
+ "retrieved": "2026-08-13",
+ "retrieved_by": "moabb.datasets.Wairagkar2018.data_path()",
+ "upstream_cache_root": "/expanse/lustre/scratch/bpinto/temp_project/sourcedata_staging/mne_data/MNE-wairagkar2018-data",
+ "license": "CC-BY-4.0",
+ "doi": "10.1371/journal.pone.0193722",
+ "naming": "upstream_filenames_restored",
+ "n_files": 14,
+ "total_bytes": 720883575,
+ "files": [
+  {
+   "file": "Participant1.mat",
+   "bytes": 52268520,
+   "sha256": "0160e6d8e7d3310d0820f8b40878de9ed000d73fcf4f9913f9656dd46aca8f21",
+   "subject": "1"
+  },
+  {
+   "file": "Participant10.mat",
+   "bytes": 52213019,
+   "sha256": "19e4b87099f65b2b7383342fda9d97a67a7ce70e6a7609f853897eac391db738",
+   "subject": "10"
+  },
+  {
+   "file": "Participant11.mat",
+   "bytes": 52267698,
+   "sha256": "e390c8f43ba970819ab0f9b71bbf5d6b23a18afb726d520cb21898a1afc5c633",
+   "subject": "11"
+  },
+  {
+   "file": "Participant12.mat",
+   "bytes": 52265161,
+   "sha256": "1c7167e5530da9f12755d0866c1aec91b229b479b8607fae7ea73487917e86b1",
+   "subject": "12"
+  },
+  {
+   "file": "Participant13.mat",
+   "bytes": 52241142,
+   "sha256": "f98b49ed342185963b20279feb0823f6eff4d42a81db927a7056574664e58f2d",
+   "subject": "13"
+  },
+  {
+   "file": "Participant14.mat",
+   "bytes": 52207088,
+   "sha256": "f5cd80a42121b111077226516d6ab8cdd16aada484839af947b3a73e8dfef2b5",
+   "subject": "14"
+  },
+  {
+   "file": "Participant2.mat",
+   "bytes": 45719461,
+   "sha256": "03f55a640d026fa2866fe9b0404a4f69bcc4394d227a2b261b89692c773d138b",
+   "subject": "2"
+  },
+  {
+   "file": "Participant3.mat",
+   "bytes": 52230911,
+   "sha256": "794505dde40ee75b3bba43c2276d22ab8bdf9f8bf915dcabd0c16a99ded01d32",
+   "subject": "3"
+  },
+  {
+   "file": "Participant4.mat",
+   "bytes": 52255032,
+   "sha256": "6250fc35ede53044c7ea4a1477f0dafb8fb62232f5ad26030f55bad032cd1a10",
+   "subject": "4"
+  },
+  {
+   "file": "Participant5.mat",
+   "bytes": 52244576,
+   "sha256": "a01606eebe0235ad4ea1fd2d9ab88f658dfa6e9a08cf997a98525e71ec216bc5",
+   "subject": "5"
+  },
+  {
+   "file": "Participant6.mat",
+   "bytes": 48272379,
+   "sha256": "8e3617050125bcb0083c6c6585742f84eec2798e422ddc14c9f64edd05708d95",
+   "subject": "6"
+  },
+  {
+   "file": "Participant7.mat",
+   "bytes": 52218133,
+   "sha256": "2e0feb686010ec6aace15bc8b2c08131375c53daaf4a48102d080dd8edeecb75",
+   "subject": "7"
+  },
+  {
+   "file": "Participant8.mat",
+   "bytes": 52235404,
+   "sha256": "792fadb5a7a6e2e162f8c8650cf75ca41df0394457e404ab73bfe4453275bf7c",
+   "subject": "8"
+  },
+  {
+   "file": "Participant9.mat",
+   "bytes": 52245051,
+   "sha256": "6b4fb9fc94215ccec61350b5db726da4a5b7094c2718f34818fada94bde5f562",
+   "subject": "9"
+  }
+ ],
+ "n_subjects_recorded": 14
+}
